@@ -22,8 +22,8 @@ Think Splitwise, but built from scratch as a portfolio project.
 cd backend && source venv/bin/activate
 uvicorn main:app --reload --loop asyncio   # --loop asyncio required on Python 3.14
 
-# Terminal 2 — Frontend
-cd frontend && npm run dev
+# Terminal 2 — Web
+cd web && npm run dev
 ```
 
 ---
@@ -50,7 +50,7 @@ Expense-Splitter-React/
 │       ├── invites.py              POST /groups/{id}/invite, GET+POST /invite/{token}
 │       └── notifications.py        Bell notifications + POST /groups/{id}/remind
 │
-└── frontend/                       React + Vite + Tailwind CSS v4
+└── web/                       React + Vite + Tailwind CSS v4
     ├── vite.config.js              Includes @tailwindcss/vite plugin
     ├── package.json
     └── src/
@@ -101,7 +101,7 @@ Expense-Splitter-React/
 | pydantic[email] | 2.12.5 | Request validation + EmailStr |
 | python-dotenv | 1.2.2 | Load .env file |
 
-### Frontend
+### Web
 | Library | Version | Purpose |
 |---------|---------|---------|
 | React | 19.x | UI framework |
